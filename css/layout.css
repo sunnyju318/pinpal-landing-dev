@@ -1,18 +1,45 @@
 body {
   width: 100%;
-  height: 100vh;
   flex-direction: column;
   margin: 0 auto;
+  position: relative;
+}
+
+.map {
+width: 100%;
+height: 150vh;
+position: absolute;
+overflow: hidden;
+z-index: 0;
+}
+
+.map_right{
+  position: absolute;
+  width: 800px;
+  right: -250px;
+  top:100px;
+  fill: rgb(116, 116, 116);
+}
+
+.map_left{
+  position: absolute;
+  width: 800px;
+  left: -500px;
+  top:250px;
+  fill: rgb(116, 116, 116);
 }
 
 /* header */
 
 header {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #FAFAFA;
   padding: 1rem 2rem;
+  z-index: 2;
+  position: fixed;
 }
 
 .logo-group {
@@ -43,7 +70,9 @@ header nav ul li {
 main {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 6rem;
+  z-index: 1;
+  position: relative;
 }
 
 /* footer */
@@ -56,13 +85,21 @@ footer {
   gap: 1.5rem;
   padding: 2rem 2rem;
   background-color: #FAFAFA;
+  margin-top: 6rem;
+  z-index: 1;
+  position: relative;
 }
 
 .footer-contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-contents p {
+  font-size: 1rem;
 }
 
 footer ul {
@@ -81,4 +118,12 @@ footer .social_media_icons {
 
 footer img {
   width: 2rem;
+}
+
+.social_media_icons a img {
+  width: 2rem;
+}
+
+footer .rights-bottom {
+  display: none;
 }

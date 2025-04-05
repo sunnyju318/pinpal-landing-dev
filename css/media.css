@@ -21,4 +21,18 @@
     display: none;
   }
 
+footer ul,
+footer nav,
+footer .footer-logo,
+footer .rights-top{
+display: none;
+}
+
+footer .rights-bottom{
+  display: block;
+}
+
+.footer-contents {
+  gap: 1rem;
+}
 }
