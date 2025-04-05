@@ -1,0 +1,32 @@
+body{
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1{
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem); 
+  font-weight: 400;
+}
+
+h2{
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem); 
+  font-weight: 400;
+}
+
+h3{
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); 
+  font-weight: 400;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem); 
+}
+
+.b1{
+  font-size: 2rem;
+}

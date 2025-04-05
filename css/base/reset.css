@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #dcd9d5;
+  color: #111;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
