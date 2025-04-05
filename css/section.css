@@ -1,0 +1,114 @@
+
+
+/* common */
+.block{
+  display: block;
+}
+
+/* hero */
+.hero{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.download-icons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.download-icons{
+  width: 250px;
+  border-radius: 1em;
+  overflow: hidden;
+  margin: 2rem 0 1rem;
+}
+
+.download-icons img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.social_media_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social_media_icons img{
+  width: 4rem;
+}
+
+.hero h1,
+.hero p {
+  text-align: center;
+}
+
+
+/* features-overview */
+
+.features-overview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.features-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* promo-video */
+.promo-video {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.promo-video video {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* travel categories */
+.travel-categories img{
+  width: 300px;
+}
+
+.travel-categories{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-categories-container{
+  display: flex;
+}

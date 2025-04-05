@@ -1,7 +1,5 @@
 /* Tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* Mobile */
 @media (max-width: 767px) {
@@ -9,7 +7,8 @@
     transform: translate(0, -60px);
 
   }
-  .logo-group .logo-icon{
+
+  .logo-group .logo-icon {
     max-width: 2rem;
     min-width: 2rem;
   }
@@ -18,7 +17,7 @@
     padding: 1rem 1rem;
   }
 
-  nav{
+  nav {
     display: none;
   }
 

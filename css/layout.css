@@ -7,7 +7,7 @@ body {
 
 /* header */
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,26 +15,70 @@ header{
   padding: 1rem 2rem;
 }
 
-.logo-group{
+.logo-group {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-.logo-icon{
+.logo-icon {
   width: 2rem;
 }
 
-.logo-text{
+.logo-text {
   width: 5rem;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
-gap: 5rem;
+  gap: 5rem;
 }
 
-header nav ul li{
+header nav ul li {
   font-size: 1.2rem;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+  background-color: #FAFAFA;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .social_media_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 2rem;
 }
