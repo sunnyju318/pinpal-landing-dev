@@ -6,32 +6,95 @@ body {
 }
 
 .map {
-width: 100%;
-height: 150vh;
-position: absolute;
-overflow: hidden;
-z-index: 0;
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.map_right{
+.map_right {
   position: absolute;
   width: 800px;
   right: -250px;
-  top:100px;
-  fill: rgb(116, 116, 116);
+  top: 200px;
+  fill: rgb(115, 104, 104);
+  transform-origin: bottom;
+  transition: ease-in-out 1.5s;
 }
 
-.map_left{
+.map_left {
   position: absolute;
   width: 800px;
-  left: -500px;
-  top:250px;
-  fill: rgb(116, 116, 116);
+  left: -400px;
+  top: 300px;
+  fill: rgb(115, 104, 104);
+  transform-origin: bottom;
+  transition: ease-in-out 1s;
+}
+
+.map_right_scrolled{
+  transform: rotateZ(10deg) scale(1.1) translateX(100px);
+  opacity: 0.3;
+}
+
+.map_left_scrolled{
+  transform: rotateZ(-20deg) scale(1.1) translateX(-100px);
+  opacity: 0.3;
+}
+
+.pin-point {
+  opacity: 1;
+  transition: opacity 1s ease-in 1s;
+}
+
+.st-pin.st-pin-hide,
+.nd-pin.nd-pin-hide,
+.rd-pin.rd-pin-hide{
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.st-pin{
+  position: absolute;
+  width: 30px;
+  right: 400px;
+  top: 350px;
+  opacity: 1;
+  animation: pinAnimation ease 0.7s infinite;
+}
+
+.nd-pin{
+  position: absolute;
+  width: 30px;
+  right: 300px;
+  top: 300px;
+  opacity: 1;
+  animation: pinAnimation ease 0.7s infinite;
+}
+
+.rd-pin{
+  position: absolute;
+  width: 30px;
+  left: 180px;
+  top: 730px;
+  opacity: 1;
+  animation: pinAnimation ease 0.7s infinite;
+}
+
+@keyframes pinAnimation{
+  0%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
 }
 
 /* header */
 
 header {
+  margin: 0 auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -40,17 +103,46 @@ header {
   padding: 1rem 2rem;
   z-index: 2;
   position: fixed;
+  transition: all ease 0.3s;
+}
+
+.scrolled-header-bg{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.2rem 2rem; 
+}
+
+.header-btn:hover{
+  background-color:#b22130;
+}
+
+.scrolled-header-btn{
+  padding: 0.3rem 1rem;
+}
+
+.scrolled-header-logoicon{
+  transform: rotateZ(-90deg);
 }
 
 .logo-group {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .logo-icon {
   width: 2rem;
+}
+
+.logo-icon-img:hover{
+  transform: rotateY(360deg);
+}
+
+.logo-icon-img{
+  transition: all ease 1s;
 }
 
 .logo-text {
@@ -64,6 +156,18 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.2rem;
+}
+
+header nav ul li a:hover{
+  color: #D72638;
+}
+
+header button{
+  width: 150px;
+}
+
+.header-btn{
+  transition: all ease 0.3s;
 }
 
 /* main */
@@ -109,6 +213,10 @@ footer ul {
   gap: 1rem;
 }
 
+footer ul li a:hover{
+  color: #D72638;
+}
+
 footer .social_media_icons {
   display: flex;
   justify-content: center;
@@ -120,6 +228,14 @@ footer img {
   width: 2rem;
 }
 
+footer .facebook-icon-footer{
+  width: 1.5rem;
+}
+
+footer .social_media_icons a:hover{
+  transform: scale(1.2);
+}
+
 .social_media_icons a img {
   width: 2rem;
 }
@@ -127,3 +243,17 @@ footer img {
 footer .rights-bottom {
   display: none;
 }
+
+footer .footer-logo{
+animation: footerLogoAnimation 2s ease infinite;
+}
+
+@keyframes footerLogoAnimation{
+  0%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+}
+

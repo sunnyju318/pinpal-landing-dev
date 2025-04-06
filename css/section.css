@@ -25,6 +25,10 @@
   margin: 2rem 0 1rem;
 }
 
+.download-icons-container a:hover{
+  transform: scale(1.1);
+}
+
 .download-icons{
   width: 250px;
   border-radius: 1em;
@@ -41,6 +45,10 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+
+.social-media-container a:hover{
+  transform: scale(1.1);
 }
 
 .social-media-icons{
@@ -61,6 +69,10 @@
   text-align: center;
 }
 
+.hero-text{
+  color: #b22130;
+}
+
 
 /* features-overview */
 
@@ -71,6 +83,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .features-overview p,
@@ -82,7 +96,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
@@ -92,6 +106,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flight{
+  position: absolute;
+  width: 60px;
+  z-index: -1;
+  right: -70px;
+  bottom: 50px;
+  transform: rotateZ(40deg);
+  fill: #223127;
+  opacity: 0.4;
 }
 
 
@@ -125,6 +150,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .travel-categories p,
@@ -160,4 +187,30 @@
   align-items: center;
   gap: 1rem;
   position: relative;
+}
+
+.travel-card button{
+  background: rgba(34, 49, 39, 0.7); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 200px;
+  border-radius: 2rem 2rem 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.travel-card button:hover{
+  background-color: #223127;
+}
+
+.flight-travel-categories{
+  position: absolute;
+  width: 60px;
+  z-index: -1;
+  left:-60px;
+  top: 100px;
+  transform: rotateY(180deg) rotateZ(-20deg);
+  fill: #223127;
+  opacity: 0.4;
 }

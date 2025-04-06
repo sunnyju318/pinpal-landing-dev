@@ -5,14 +5,5 @@ button{
   border-radius: 2rem;
 }
 
-header button{
-  width: 150px;
-}
 
-.travel-card button{
-  background-color: #223127;
-  width: 200px;
-  border-radius: 2rem 2rem 0 0;
-  position: absolute;
-  bottom: 0;
-}
+
