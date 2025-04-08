@@ -3,11 +3,12 @@ body {
   flex-direction: column;
   margin: 0 auto;
   position: relative;
+
 }
 
 .map {
   width: 100%;
-  height: 300vh;
+  height: 200vh;
   position: absolute;
   overflow: hidden;
   z-index: 0;
